@@ -1,0 +1,13 @@
+- type: entity
+  parent: BaseMedicalPDA
+  id: FreelancerPDA
+  name: Freelancer PDA
+  description: Refurbished standard PDA
+  components:
+  - type: Sprite
+    sprite: _Floof/Objects/Devices/pda.rsi
+  - type: Pda
+    id: FreelancerIDCard
+    state: pda-free
+  - type: PdaBorderColor
+    borderColor: "#668643"
