@@ -16,7 +16,7 @@ Space Station 14 is a remake of SS13 that runs on [Robust Toolbox](https://githu
 <div class="header" align="center">
 
 [Discord](https://discord.gg/pmxfNx8gRS)
-##### _ The rest is to be determined. - M3739_
+##### _The rest is to be determined. - M3739_
 
 </div>
 
