@@ -1,4 +1,4 @@
-# Panta Rhei Contributing Guidelines
+# Euphoria Contributing Guidelines
 
 ###### _(Note that this has been largely borrowed from Delta-V. In the future, we will replace most of these examples with examples based on our native developments. For now, this is a placeholder. - M3739)_
 
@@ -9,9 +9,9 @@ Importantly do not make webedits, copied verbatim from above:
 
 Upstream is the [DeltaV-Station/Delta-v](https://github.com/DeltaV-Station/Delta-v) repository that Delta-V runs on.
 
-# Content specific to Panta Rhei
+# Content specific to Euphoria
 
-In general anything you create from scratch (not modifying something that exists from upstream) should go in the Floof Station subfolder, `_Floof`.
+In general anything you create from scratch (not modifying something that exists from upstream) should go in the Euphoria subfolder, `_Euphoria`.
 
 ###### _(Remind me to redo this section to feature our native developments as examples. - M3739)_
 
@@ -26,7 +26,7 @@ Examples:
 
 # Changes to upstream files
 
-Follow a few guidelines when modifying non-DeltaV files, to help us manage our project. (files that are not in `_DV` or `Nyano` folders)
+Follow a few guidelines when modifying non-Euphoria files, to help us manage our project. (files that are not in the `_Euphoria` folder)
 
 Primarily, **add comments on or around all new or changed lines** in upstream files. Explain what was changed to make resolving merge conflicts easier; we regularly merge new upstream changes into our project.
 
@@ -41,7 +41,7 @@ If you add a new component to a prototype, add an explanation to the `type: ...`
   parent: MobSiliconBase
   id: MobSupplyBot
   components:
-  - type: InteractionPopup # DeltaV - Make supplybots pettable
+  - type: InteractionPopup # Euphoria - Make supplybots pettable
     interactSuccessString: petting-success-supplybot
     interactFailureString: petting-failure-supplybot
     interactSuccessSound:
@@ -56,30 +56,30 @@ Whereas if you just modify some fields of a component, comment the fields instea
   table: !type:AllSelector
     children:
     - id: ClothingHandsGlovesCombat
-    - id: ClothingShoesBootsSecurityMagboots # DeltaV - Added security magboots.
+    - id: ClothingShoesBootsSecurityMagboots # Euphoria - Added security magboots.
     - id: ClothingShoesBootsJack
-    #- id: ClothingOuterCoatWarden # DeltaV - removed for incongruence
-    #- id: ClothingOuterWinterWarden # DeltaV - removed for incongruence
+    #- id: ClothingOuterCoatWarden # Euphoria - removed for incongruence
+    #- id: ClothingOuterWinterWarden # Euphoria - removed for incongruence
     - id: RubberStampWarden
     - id: DoorRemoteArmory
     - id: HoloprojectorSecurity
-    # Begin DeltaV additions
+    # Begin Euphoria additions
     - id: WeaponEnergyShotgun
     - id: BoxPDAPrisoner
     - id: LunchboxSecurityFilledRandom
       prob: 0.3
-    # End DeltaV additions
+    # End Euphoria additions
 ```
 
 ### Changing Upstream C# .cs files
 
-If you are adding a lot of C# code, then take advantage of partial classes. Put the new code in its own file in the `_DV` folder, if it makes sense.
+If you are adding a lot of C# code, then take advantage of partial classes. Put the new code in its own file in the `_Euphoria` folder, if it makes sense.
 
 Otherwise, **add comments on or around any changed lines.**
 
 A comment on a new imported namespace:
 ```cs
-using Content.Server.Psionics.Glimmer; // Panta Rhei
+using Content.Server.Psionics.Glimmer; // Euphoria
 ```
 
 A pair of comments enclosing a block of added code:
@@ -90,10 +90,10 @@ private EntityUid Slice(...)
 
     _transform.SetLocalRotation(sliceUid, 0);
 
-    // Panta Rhei - start of deep frier stuff
+    // Euphoria - start of deep frier stuff
     var slicedEv = new FoodSlicedEvent(user, uid, sliceUid);
     RaiseLocalEvent(uid, ref slicedEv);
-    // Panta Rhei - end of deep frier stuff
+    // Euphoria - end of deep frier stuff
 
     ...
 }
@@ -101,20 +101,20 @@ private EntityUid Slice(...)
 
 ### Changing Upstream Localization Fluent .ftl files
 
-**Move all changed locale strings to a new DeltaV file** - use a `.ftl` file in the `_DV` folder. Comment out the old strings in the upstream file, and explain that they were moved.
+**Move all changed locale strings to a new Euphoria file** - use a `.ftl` file in the `_Euphoria` folder. Comment out the old strings in the upstream file, and explain that they were moved.
 
 Example:
 
 Commented out old string in `Resources\Locale\en-US\xenoarchaeology\artifact-analyzer.ftl`
 ```
-# DeltaV - moved to _DV file
+# Euphoria - moved to _Euphoria file
 #analysis-console-info-effect-value = [font="Monospace" size=11][color=gray]{ $state ->
 #    [true] {$info}
 #    *[false] Unlock nodes to gain info
 #}[/color][/font]
 ```
 
-The new version of the string in `Resources\Locale\en-US\_DV\xenoarchaeology\artifact-analyzer.ftl`
+The new version of the string in `Resources\Locale\en-US\_Euphoria\xenoarchaeology\artifact-analyzer.ftl`
 ```
 analysis-console-info-effect-value = [font="Monospace" size=11][color=gray]{ $state ->
     [vagueandspecific] {$vagueInfo} ({$specificInfo})
@@ -164,7 +164,7 @@ Additionally for long-lasting PRs, if you see `RobustToolbox` in the changed fil
 # Changelogs
 ###### _(Update this section again once we finish the changelog stuff. - M3739)_
 
-By default any changelogs goes in the Panta Rhei changelog, you can use the Panta Rhei admin changelog by putting `DELTAVADMIN:` in a line after `:cl:`.
+By default any changelogs goes in the Euphoria changelog, you can use the Euphoria admin changelog by putting `DELTAVADMIN:` in a line after `:cl:`.
 
 Do not use `ADMIN:` as **it will mangle** the upstream admin changelog!
 
