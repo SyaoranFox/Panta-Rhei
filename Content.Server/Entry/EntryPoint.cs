@@ -53,7 +53,7 @@ namespace Content.Server.Entry
         private FeedbackPopupManager? _feedbackPopupManager; // DeltaV
         private IWatchlistWebhookManager _watchlistWebhookManager = default!;
         private IConnectionManager? _connectionManager;
-        [Dependency] private readonly IServerConsentManager _consentManager = default!;
+        private IServerConsentManager _consentManager = default!;
 
 
         /// <inheritdoc />
@@ -104,6 +104,7 @@ namespace Content.Server.Entry
                 _dbManager = IoCManager.Resolve<IServerDbManager>();
                 _feedbackPopupManager = IoCManager.Resolve<FeedbackPopupManager>(); // DeltaV
                 _watchlistWebhookManager = IoCManager.Resolve<IWatchlistWebhookManager>();
+                _consentManager = IoCManager.Resolve<IServerConsentManager>();
 
                 logManager.GetSawmill("Storage").Level = LogLevel.Info;
                 logManager.GetSawmill("db.ef").Level = LogLevel.Info;
