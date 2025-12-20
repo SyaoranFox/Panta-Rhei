@@ -123,6 +123,10 @@
   - type: CosmicCorruptible # DeltaV - Cosmic Cult
     convertTo: WindowCosmicCult
 
+  - type: InteractionVerbs
+    allowedVerbs:
+    - KnockOn
+
 - type: entity
   id: WindowRCDResistant
   parent: Window
@@ -229,6 +233,9 @@
       sprite: Structures/Windows/cracks_directional.rsi
   - type: StaticPrice
     price: 15
+  - type: InteractionVerbs
+    allowedVerbs:
+    - KnockOn
 
 - type: entity
   id: WindowDirectionalRCDResistant
