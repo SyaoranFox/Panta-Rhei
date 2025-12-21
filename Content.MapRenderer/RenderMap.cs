@@ -53,3 +53,4 @@ public sealed class RenderMapFile : RenderMap
         return $"{nameof(RenderMapFile)}({FileName})";
     }
 }
+
