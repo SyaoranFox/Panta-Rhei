@@ -1,6 +1,6 @@
 ﻿//I had to comment out a lot here to let kissing and hugging work without mood being present
 using Content.Shared.InteractionVerbs;
-//using Content.Shared.Mood;
+using Content.Shared.Mood;
 using Robust.Shared.Prototypes;
 
 namespace Content.Server.InteractionVerbs.Actions;
@@ -11,8 +11,8 @@ namespace Content.Server.InteractionVerbs.Actions;
 [Serializable]
 public sealed partial class MoodAction : InteractionAction
 {
-    //[DataField(required: true)]
-    //public ProtoId<MoodEffectPrototype> Effect;
+    [DataField(required: true)]
+    public ProtoId<MoodEffectPrototype> Effect;
 
     /// <summary>
     ///     Parameters for the <see cref="MoodEffectEvent"/>. Only used if <see cref="Remove"/> is false.
