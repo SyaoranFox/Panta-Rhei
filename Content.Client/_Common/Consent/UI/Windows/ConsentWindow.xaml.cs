@@ -14,6 +14,7 @@ using Robust.Client.UserInterface.XAML;
 using Robust.Shared.Configuration;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
+using System.Linq;
 
 namespace Content.Client._Common.Consent.UI.Windows;
 
@@ -40,7 +41,9 @@ public sealed partial class ConsentWindow : FancyWindow
         ConsentFreetext.Placeholder = new Rope.Leaf(Loc.GetString("consent-window-freetext-placeholder"));
         ConsentFreetext.OnTextChanged += _ => UnsavedChanges();
 
-        foreach (var toggle in _prototypeManager.EnumeratePrototypes<ConsentTogglePrototype>())
+        var consentToggles = _prototypeManager.EnumeratePrototypes<ConsentTogglePrototype>()
+            .OrderBy(x => x.SortKey);
+        foreach (var toggle in consentToggles)
         {
             var toggleControl = new ConsentToggleControl(toggle);
             ConsentSettings.Children.Add(toggleControl);
