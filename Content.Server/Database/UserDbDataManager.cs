@@ -56,7 +56,6 @@ public sealed class UserDbDataManager : IPostInjectInit
         {
             onDisconnect(session);
         }
-        _consent.OnClientDisconnected(session);
     }
 
     private async Task Load(ICommonSession session, CancellationToken cancel)

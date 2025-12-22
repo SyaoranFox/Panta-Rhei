@@ -24,14 +24,15 @@ public sealed partial class ConsentWindow : FancyWindow
     [Dependency] private readonly IConfigurationManager _configManager = default!;
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
 
-    private List<ConsentToggleControl> ConsentToggles = new();
+    private List<ConsentToggleControl> _consentToggles = new();
 
     public ConsentWindow()
     {
         RobustXamlLoader.Load(this);
         IoCManager.InjectDependencies(this);
 
-        SaveConsentSettings.OnPressed += _ => {
+        SaveConsentSettings.OnPressed += _ =>
+        {
             SaveConsentSettings.Disabled = true;
             _consentManager.UpdateConsent(GetSettings());
         };
@@ -44,7 +45,7 @@ public sealed partial class ConsentWindow : FancyWindow
             var toggleControl = new ConsentToggleControl(toggle);
             ConsentSettings.Children.Add(toggleControl);
             toggleControl.OnStateChange += _ => UnsavedChanges();
-            ConsentToggles.Add(toggleControl);
+            _consentToggles.Add(toggleControl);
         }
 
         _consentManager.OnServerDataLoaded += UpdateUi;
@@ -57,7 +58,7 @@ public sealed partial class ConsentWindow : FancyWindow
         var text = Rope.Collapse(ConsentFreetext.TextRope);
         var toggles = new Dictionary<ProtoId<ConsentTogglePrototype>, string>();
 
-        foreach (var toggleControl in ConsentToggles)
+        foreach (var toggleControl in _consentToggles)
         {
             toggles[toggleControl.ConsentToggleProtoId] = toggleControl.State;
         }
@@ -89,7 +90,7 @@ public sealed partial class ConsentWindow : FancyWindow
         var consent = _consentManager.GetConsentSettings();
         ConsentFreetext.TextRope = new Rope.Leaf(consent.Freetext);
 
-        foreach (var toggleControl in ConsentToggles)
+        foreach (var toggleControl in _consentToggles)
         {
             if (consent.Toggles.TryGetValue(toggleControl.ConsentToggleProtoId, out var toggle))
             {
