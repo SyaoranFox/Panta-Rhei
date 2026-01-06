@@ -9,7 +9,7 @@ using Content.Shared._Common.Consent;
 using Content.Shared.Administration.Logs;
 using Content.Shared.CCVar;
 using Content.Shared.Construction.Prototypes;
-using Content.Shared.Consent;
+using Content.Shared._Common.Consent;
 using Content.Shared.Database;
 using Content.Shared.Preferences;
 using Content.Shared.Roles;

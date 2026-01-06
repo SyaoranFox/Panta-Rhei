@@ -11,7 +11,7 @@ using Content.Server.Administration.Managers;
 using Content.Shared._Common.Consent;
 using Content.Shared.Administration.Logs;
 using Content.Shared.Construction.Prototypes;
-using Content.Shared.Consent;
+using Content.Shared._Common.Consent;
 using Content.Shared.Database;
 using Content.Shared.Humanoid;
 using Content.Shared.Humanoid.Markings;
