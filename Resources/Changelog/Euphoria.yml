@@ -79,3 +79,17 @@ Entries:
       message: Being a living blood bag
   id: 10
   time: '2026-01-09T07:08:04.0000000+00:00'
+- author: Mnemotechnician
+  changes:
+    - type: Add
+      message: Added the Subtle and Subtle OOC chat channels.
+    - type: Tweak
+      message: Emotes can no longer go through walls.
+  id: 11
+  time: '2026-01-11T01:43:04.0000000+00:00'
+- author: Raikyr0
+  changes:
+    - type: Add
+      message: Added Floof Chemicals and Drinks
+  id: 12
+  time: '2026-01-11T01:44:32.0000000+00:00'
