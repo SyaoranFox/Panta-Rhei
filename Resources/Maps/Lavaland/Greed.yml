@@ -124,13 +124,13 @@ entities:
     - type: Transform
       pos: -0.34775037,4.114311
       parent: 1
-- proto: CrateCargoGambling
-  entities:
-  - uid: 51
-    components:
-    - type: Transform
-      pos: 0.5,4.5
-      parent: 1
+#- proto: CrateCargoGambling
+#  entities:
+#  - uid: 51
+#    components:
+#    - type: Transform
+#      pos: 0.5,4.5
+#      parent: 1
 - proto: DartBlue
   entities:
   - uid: 85
