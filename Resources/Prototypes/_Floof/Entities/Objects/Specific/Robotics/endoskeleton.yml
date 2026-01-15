@@ -16,27 +16,27 @@
       borg_l_arm+o:
         whitelist:
           tags:
-          - BorgGenericLLeg
+          - BorgLArm
       borg_r_arm+o:
         whitelist:
           tags:
-          - BorgGenericRLeg
+          - BorgRArm
       borg_l_leg+o:
         whitelist:
           tags:
-          - BorgGenericLLeg
+          - BorgLLeg
       borg_r_leg+o:
         whitelist:
           tags:
-          - BorgGenericRLeg
+          - BorgRLeg
       borg_head+o:
         whitelist:
           tags:
-          - BorgGenericHead
+          - BorgHead
       borg_chest+o:
         whitelist:
           tags:
-          - BorgGenericTorso
+          - BorgTorso
       borg_l_salvarm+o:
         whitelist:
           tags:

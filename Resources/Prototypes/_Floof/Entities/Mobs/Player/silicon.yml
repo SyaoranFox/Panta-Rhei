@@ -1,0 +1,39 @@
+﻿- type: entity
+  id: PlayerBorgQuadserv
+  parent: BorgChassisQuadserv
+  suffix: Battery, Tools
+  components:
+  - type: ContainerFill
+    containers:
+      borg_brain:
+      - PositronicBrain
+      borg_module:
+      - BorgModuleTool
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        startingItem: PowerCellMedium
+  - type: RandomMetadata
+    nameSegments: [NamesBorg]
+
+- type: entity
+  id: PlayerBorgQuadmed
+  parent: BorgChassisQuadmed
+  suffix: Diagnosis, Treatment
+  components:
+  - type: ContainerFill
+    containers:
+      borg_brain:
+      - PositronicBrain
+      borg_module:
+      - BorgModuleTool
+      - BorgModuleDiagnosis
+      - BorgModuleTopicals
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        startingItem: PowerCellMedium
+  - type: RandomMetadata
+    nameSegments: [NamesBorg]
