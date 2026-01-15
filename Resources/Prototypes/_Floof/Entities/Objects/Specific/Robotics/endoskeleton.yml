@@ -113,12 +113,12 @@
   - type: PartAssembly
     parts:
       quadborg:
-      - BorgGenericLLeg
-      - BorgGenericRLeg
-      - BorgGenericLLeg
-      - BorgGenericRLeg
-      - BorgGenericHead
-      - BorgGenericTorso
+      - BorgLArm
+      - BorgRArm
+      - BorgLLeg
+      - BorgRLeg
+      - BorgHead
+      - BorgTorso
       quadsalv:
       - BorgMiningLLeg
       - BorgMiningRLeg
