@@ -141,7 +141,7 @@
       - BorgMedicalHead
       - BorgMedicalTorso
   - type: Construction
-    graph: Cyborg
+    graph: Quadborg
     node: start
     defaultTarget: Quadborg
     containers:

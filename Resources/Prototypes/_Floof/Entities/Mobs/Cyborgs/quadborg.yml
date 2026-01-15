@@ -53,7 +53,8 @@
       state: quadsprite
     name: cyborg
   - type: Construction
-    node: cyborg
+    graph: Quadborg
+    node: Quadborg
   - type: Speech
     speechVerb: Robotic
   - type: SiliconLawProvider
