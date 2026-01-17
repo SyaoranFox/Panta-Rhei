@@ -32,6 +32,9 @@
       "name": "pda-free"
     },
     {
+      "name": "pda"
+    },
+    {
       "name": "equipped-IDCARD",
       "directions": 4
     }
