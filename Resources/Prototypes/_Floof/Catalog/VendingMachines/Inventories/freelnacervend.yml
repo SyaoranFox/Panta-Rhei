@@ -20,8 +20,8 @@
     ClothingMaskGasMerc: 5
     ClothingUniformJumpsuitMercenary: 5
     ClothingBeltMercWebbing: 5
-    ClothingNeckOldMantle: 5
-    ClothingNeckUnathiMantle: 5
+    #ClothingNeckOldMantle: 5
+    #ClothingNeckUnathiMantle: 5
   # Suits
     ClothingOuterHardsuitFreelancerPilot: 4
     ClothingOuterHardsuitFreelancerLegion: 4
@@ -35,9 +35,9 @@
     WeaponShotgunDoubleBarreled: 3
   # Ammo
     BoxMagazinePistol: 2
-    BoxMagazinePistolRubber: 2
+    #BoxMagazinePistolRubber: 2
     BoxMagazineShotgun: 2
     BoxMagazineShotgunBeanbag: 2
     BoxMagazinePistolSubMachineGun: 2
-    BoxMagazinePistolSubMachineGunRubber: 2
+    #BoxMagazinePistolSubMachineGunRubber: 2
     MagazineBoxCaselessRifleBig: 1

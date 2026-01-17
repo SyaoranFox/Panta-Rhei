@@ -7,7 +7,7 @@
   alwaysUseSpawner: false
   overrideConsoleVisibility: true
   canBeAntag: false
-  canBeAntagTarget: false
+  #canBeAntagTarget: false
   icon: "JobIconFreelancer"
   joinNotifyCrew: false
   whitelisted: true
@@ -22,13 +22,12 @@
     jumpsuit: ClothingUniformJumpsuitMercenary
     shoes: ClothingShoesBootsMercFilled
     mask: ClothingMaskGasMerc
-    neck: ClothingNeckOldMantle
+    #neck: ClothingNeckOldMantle
     gloves: ClothingHandsMercGlovesCombat
-    outerClothing: ClothingOuterVestWebMercenary
+    #outerClothing: ClothingOuterVestWebMercenary
     back: ClothingBackpackMerc
     id: FreelancerPDA
     ears: ClothingHeadsetAltFreelancer
     belt: ClothingBeltUtilityFilled
     pocket1: WeaponPistolPollock
     pocket2: HarmonicaInstrument
-    
