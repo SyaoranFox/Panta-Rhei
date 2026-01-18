@@ -28,6 +28,7 @@
         probability: 0.02
         conditions:
           - !type:ReagentCondition
+            reagent: NikkosNaughtyNectar
             max: 50
   footstepSound:
     collection: FootstepSticky
@@ -67,6 +68,7 @@
       - !type:ResetNarcolepsy
         conditions:
         - !type:ReagentCondition
+          reagent: BoykissersEnergy
           min: 20
   footstepSound:
     collection: FootstepSticky

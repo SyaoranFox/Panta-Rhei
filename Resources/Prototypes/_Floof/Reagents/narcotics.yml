@@ -22,6 +22,7 @@
         probability: 0.035
         conditions:
           - !type:ReagentCondition
+            reagent: Pomelustine
             max: 50
       - !type:PopupMessage # Overdose causes nausea and vomiting
         type: Local
@@ -31,14 +32,17 @@
         probability: 0.06
         conditions:
           - !type:ReagentCondition
+            reagent: Pomelustine
             min: 50
       - !type:Drunk
         conditions:
         - !type:ReagentCondition
+          reagent: Pomelustine
           min: 50
       - !type:Vomit
         conditions:
         - !type:ReagentCondition
+          reagent: Pomelustine
           min: 60
         probability: 0.05
       - !type:PopupMessage
@@ -49,6 +53,7 @@
         probability: 0.35
         conditions:
           - !type:ReagentCondition
+            reagent: Pomelustine
             max: 0.1
 
 - type: reagent
@@ -75,6 +80,7 @@
         probability: 0.04
         conditions:
         - !type:ReagentCondition
+          reagent: Philterex
           max: 16.5
       - !type:PopupMessage
         type: Local
@@ -89,10 +95,12 @@
         probability: 0.06
         conditions:
         - !type:ReagentCondition
+          reagent: Philterex
           min: 16.5
       - !type:Emote
         conditions:
         - !type:ReagentCondition
+          reagent: Philterex
           min: 16.5
         emote: Yawn
         showInChat: true
@@ -102,10 +110,12 @@
         sprintSpeedModifier: 0.8
         conditions:
         - !type:ReagentCondition
+          reagent: Philterex
           min: 16.5
       - !type:GenericStatusEffect
         conditions:
         - !type:ReagentCondition
+          reagent: Philterex
           min: 30.0
         key: ForcedSleep
         component: ForcedSleeping
@@ -114,6 +124,7 @@
       - !type:HealthChange # poisons you if you take way too much
         conditions:
         - !type:ReagentCondition
+          reagent: Philterex
           min: 30
         damage:
           types:
@@ -126,6 +137,7 @@
         probability: 0.32
         conditions:
           - !type:ReagentCondition
+            reagent: Philterex
             max: 0.1
 
 - type: reagent
@@ -150,10 +162,12 @@
         - reagent-effect-aphrodisiac-strong3
         conditions:
         - !type:ReagentCondition
+          reagent: Libidozenithizine
           max: 10.0
       - !type:HealthChange
         conditions:
         - !type:ReagentCondition
+          reagent: Libidozenithizine
           min: 10.0
         damage:
           types:
@@ -169,6 +183,7 @@
         - reagent-effect-aphrodisiac-strongoverdose4
         conditions:
         - !type:ReagentCondition
+          reagent: Libidozenithizine
           min: 10.0
       - !type:PopupMessage
         type: Local
@@ -178,4 +193,5 @@
           - "reagent-effect-aphrodisiac-fade"
         conditions:
           - !type:ReagentCondition
+            reagent: Libidozenithizine
             max: 0.1

@@ -688,6 +688,7 @@
       - !type:AdjustReagent
         conditions:
         - !type:ReagentCondition
+          reagent: Lamplight
           min: 1
         - !type:MetabolizerTypeCondition
           type: [Moth] # non-moths get standard effect
@@ -697,6 +698,7 @@
       - !type:AdjustReagent
         conditions:
         - !type:ReagentCondition
+          reagent: Lamplight
           min: 1
         - !type:MetabolizerTypeCondition
           type: [Moth] # Get them moffy fucks horny
@@ -865,6 +867,7 @@
       - !type:HealthChange
         conditions:
         - !type:ReagentCondition
+          reagent: OpsShine
           min: 1
         - !type:MetabolizerTypeCondition
           type: [Slime] # Will poison non-slimes who ingest
@@ -1218,6 +1221,7 @@
       - !type:HealthChange
         conditions:
         - !type:ReagentCondition
+          reagent: SlimesDelight
           min: 1
         - !type:MetabolizerTypeCondition
           type: [Slime] # Will heal slimes who ingest
