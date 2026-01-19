@@ -3134,7 +3134,7 @@ entities:
     - type: Transform
       pos: 4.5,8.5
       parent: 1
-- proto: SolidReinforcedSecretDoor
+- proto: SolidSecretDoor #should be SolidReinforcedSecretDoor, changed until ported
   entities:
   - uid: 431
     components:
