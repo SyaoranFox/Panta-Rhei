@@ -195,6 +195,7 @@
     damageContainer: Inorganic
     damageModifierSet: Glass
   # "it's a jar of bees, it should break into bees"
+  #PORT: yes but I dont want to bring a new mob in yet
   - type: Destructible
     thresholds:
     - trigger:
@@ -204,12 +205,12 @@
       - !type:PlaySoundBehavior
         sound:
           collection: GlassBreak
-      - !type:SpawnEntitiesBehavior
-        spawn:
-          MobAngryBeeTimed:
-            min: 1
-            max: 1
-        transferForensics: true
+      #- !type:SpawnEntitiesBehavior
+      #  spawn:
+      #    MobAngryBeeTimed:
+      #      min: 1
+      #      max: 1
+      #  transferForensics: true
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: DamageOnLand
@@ -226,7 +227,6 @@
   id: bees
   name: seeds-bees-name
   noun: seeds-noun-nothing
-  packetName: botany-seed-jar-name
   displayName: seeds-bees-display-name
   plantRsi: _NF/Objects/Specific/Hydroponics/bees.rsi
   packetPrototype: BeeSeeds

@@ -193,7 +193,7 @@
   time: 5
   reagents:
     IceCream: 20
-    Frostoil: 10
+    FrostOil: 10
     CocoaPowder: 5
   solids:
     IceCreamBowl: 1
@@ -271,7 +271,7 @@
   id: RecipeHotX
   name: hotcross bun recipe
   result: FoodBakedBunHotX
-  resultCount: 2
+  #resultCount: 2 #MicrowaveSystem must be modified to allow for multiple products from the same recipe
   time: 10
   reagents:
     Sugar: 5
@@ -283,7 +283,7 @@
   id: RecipeMeatBun
   name: meat bun recipe
   result: FoodBakedBunMeat
-  resultCount: 2
+  #resultCount: 2
   time: 10
   solids:
     FoodDoughSlice: 1

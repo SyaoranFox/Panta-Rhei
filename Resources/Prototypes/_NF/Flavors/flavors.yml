@@ -4,6 +4,11 @@
   description: flavor-complex-pear
 
 - type: flavor
+  id: basic
+  flavorType: Base
+  description: flavor-base-basic
+
+- type: flavor
   id: honeycomb
   flavorType: Complex
   description: flavor-complex-honeycomb
