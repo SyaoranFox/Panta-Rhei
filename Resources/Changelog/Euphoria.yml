@@ -158,3 +158,9 @@ Entries:
       message: Merged upstream changes up to 2026-01-17.
   id: 20
   time: '2026-01-19T07:11:04.0000000+00:00'
+- author: JFerrix
+  changes:
+    - type: Tweak
+      message: redcued newton_cradle.ogg by -20db
+  id: 21
+  time: '2026-01-20T11:37:26.0000000+00:00'
