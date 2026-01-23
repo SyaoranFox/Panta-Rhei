@@ -203,7 +203,7 @@ public sealed class RespiratorSystem : EntitySystem
         if (_mobState.IsIncapacitated(ent))
             return false;
 
-        if (!Resolve(ent, ref ent.Comp))
+        if (!Resolve(ent, ref ent.Comp, logMissing: false))
             return false;
 
         return (ent.Comp.Saturation > ent.Comp.SuffocationThreshold);
@@ -240,7 +240,7 @@ public sealed class RespiratorSystem : EntitySystem
     /// <returns>Returns true only if the gas mixture is not toxic, and it wouldn't suffocate.</returns>
     public bool CanMetabolizeInhaledAir(Entity<RespiratorComponent?> ent, GasMixture gas)
     {
-        if (!Resolve(ent, ref ent.Comp))
+        if (!Resolve(ent, ref ent.Comp, logMissing: false))
             return false;
 
         var ev = new CanMetabolizeGasEvent(gas);
