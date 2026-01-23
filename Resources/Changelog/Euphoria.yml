@@ -187,3 +187,11 @@ Entries:
         soft friend (or foe) in maint lockers.
   id: 24
   time: '2026-01-22T02:52:08.0000000+00:00'
+- author: Cprn-Sprkl
+  changes:
+    - type: Add
+      message: >-
+        Added a new traits system, supporting conditions and new effects. Make
+        sure to check out the Traits tab in the character editor!
+  id: 25
+  time: '2026-01-23T05:34:30.0000000+00:00'
