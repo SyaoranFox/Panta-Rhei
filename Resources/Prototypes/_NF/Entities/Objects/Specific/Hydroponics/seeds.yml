@@ -205,12 +205,12 @@
       - !type:PlaySoundBehavior
         sound:
           collection: GlassBreak
-      #- !type:SpawnEntitiesBehavior
-      #  spawn:
-      #    MobAngryBeeTimed:
-      #      min: 1
-      #      max: 1
-      #  transferForensics: true
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MobAngryBeeTimed:
+            min: 1
+            max: 1
+        transferForensics: true
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: DamageOnLand
