@@ -575,9 +575,6 @@
   speciesRestriction: [ Vox ]
   forcedColoring: true
   followSkinColor: true
-  layering:
-    tail_stenciled: Tail
-    voxtailballed: Tail
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: voxtailballed
@@ -591,9 +588,6 @@
   speciesRestriction: [ Vox ]
   forcedColoring: false
   followSkinColor: false
-  layering:
-    tail_stenciled: Tail
-    voxtailstripes: Tail
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle1.rsi
     state: voxtailstripes
