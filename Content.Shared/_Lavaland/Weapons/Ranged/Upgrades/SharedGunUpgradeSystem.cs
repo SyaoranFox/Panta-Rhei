@@ -28,7 +28,7 @@
 using Content.Shared._Lavaland.Weapons.Ranged.Upgrades.Components;
 using Content.Shared._Lavaland.Weapons.Ranged.Events;
 using Content.Shared.Containers.ItemSlots;
-using Content.Shared.Damage;
+using Content.Shared.Damage.Systems; //Euphoria
 using Content.Shared.Examine;
 using Content.Shared.Weapons.Ranged.Events;
 using Content.Shared.Weapons.Ranged.Systems;

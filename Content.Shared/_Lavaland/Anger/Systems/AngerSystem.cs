@@ -9,10 +9,11 @@ using Content.Shared._Lavaland.Megafauna.Events;
 using Content.Shared._Lavaland.MobPhases;
 using Content.Shared.Actions;
 using Content.Shared.Actions.Events;
-using Content.Shared.Damage;
+using Content.Shared.Damage.Systems; //Euphoria
 using Content.Shared.Mobs;
 using Content.Shared.Mobs.Systems;
 using Content.Shared.Weapons.Melee.Events;
+using Content.Shared.Damage.Components;
 
 // ReSharper disable EnforceForStatementBraces
 namespace Content.Shared._Lavaland.Anger.Systems;

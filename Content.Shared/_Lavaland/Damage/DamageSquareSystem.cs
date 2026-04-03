@@ -22,12 +22,13 @@
 
 using Content.Shared._Lavaland.Damage.Components;
 using Content.Shared._Shitmed.Targeting;
-using Content.Shared.Damage;
+using Content.Shared.Damage.Systems;
 using Content.Shared.Whitelist;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Map.Components;
 using Robust.Shared.Network;
 using Robust.Shared.Timing;
+using Content.Shared.Damage.Components; //Euphoria
 
 namespace Content.Shared._Lavaland.Damage;
 

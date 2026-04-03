@@ -21,7 +21,7 @@
 
 using Content.Shared._Lavaland.Mobs;
 using Content.Shared._Lavaland.Weapons.Marker;
-using Content.Shared.Damage;
+using Content.Shared.Damage.Systems;//Euphoria
 using Content.Shared.Examine;
 using Content.Shared.Hands;
 using Content.Shared.Popups;
